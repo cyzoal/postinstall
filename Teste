@@ -1,0 +1,29 @@
+#!/bin/bash
+
+## Ativando Internet ## 
+
+dhcpcd
+
+## Configurando Grub ##
+
+grub-mkconfig -o /boot/grub/grub.cfg
+
+## Adicionando Usuario ##
+
+useradd -m cyz
+passwd cyz
+
+## Alterando Permissoes ##
+
+nano /etc/sudoers
+
+## Instalando Aplicativos
+
+sudo pacman -S xdg-user-dirs bash-completion xf86-video-amdgpu xorg-server xorg-apps
+xdg-user-dirs-update
+
+## Instalando Interface Grafica ##
+
+pacman -S plasma konsole networkmanager network-manager-applet dolphin spectacle sddm]
+systemctl enable sddm NetworkManager
+
