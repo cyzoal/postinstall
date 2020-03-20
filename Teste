@@ -24,6 +24,6 @@ xdg-user-dirs-update
 
 ## Instalando Interface Grafica ##
 
-pacman -S plasma konsole networkmanager network-manager-applet dolphin spectacle sddm]
+pacman -S plasma konsole networkmanager network-manager-applet dolphin spectacle sddm
 systemctl enable sddm NetworkManager
 
